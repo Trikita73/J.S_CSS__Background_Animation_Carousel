@@ -57,4 +57,34 @@ body {
     text-transform: uppercase;
     color: rgba(255 255 255 / .8);
     letter-spacing: calc(var(--index) * .24);
+    margin-bottom: calc(var(--index) * 2.6);
+}
+
+button {
+    --button-color: rgba(255 255 255 / .9);
+    padding: 9.25px 40px;
+    font-size: 15.25px;
+    border-radius: 10em;
+    background-color: transparent;
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.slider-navigation > * {
+    border: 1.5px solid var(--swiper-theme-color);
+    border-radius: 10em;
+    width: 55px;
+    height: 55px;
+}
+
+.video-background {
+    position: fixed;
+    width: 94%;
+    height: 94%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
