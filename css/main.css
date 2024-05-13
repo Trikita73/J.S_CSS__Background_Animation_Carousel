@@ -70,7 +70,7 @@ body {
 button {
     --button-color: rgba(255 255 255 / .9);
     padding: 9.25px 40px;
-    font-size: 15.25px;
+    font-size: 15.75px;
     border-radius: 10em;
     background-color: transparent;
     border: 2px solid var(--button-color);
@@ -100,4 +100,98 @@ button {
 
 .video-background.change {
     opacity: 1;
+}
+
+/* Interface */
+
+.container {
+    margin: auto;
+    max-width: 840px;
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-line {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 1.7rem 0;
+}
+
+.logo {
+    border: 3px solid #E1E6F7;
+    border-radius: 10em;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .75;
+}
+
+.logo img {
+    width: 25px;
+    height: auto;
+}
+
+.main-mnu {
+    display: flex;
+    margin-top: 15px;
+    font-size: 19px;
+    margin-right: -16px;
+}
+
+.main-mnu li {
+    list-style: none;
+}
+
+.main-mnu a {
+    color: #bbbec9;
+    padding: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+    outline: none;
+}
+
+.main-mnu a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 960px) {
+    .container-top {
+        padding: 0 25px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .main-mnu a {
+        padding: 10px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 35px;
+        height: 35px;
+    }
+    .swiper-button-prev::after, .swiper-button-next::after {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .swiper-button-prev {
+        left: 30px;
+    }
+    .swiper-button-next {
+        right: 30px;
+    }
+    .slide__content h2 {
+        font-size: calc(var(--index) * 3.25);
+        letter-spacing: calc(var(--index) * 1.5);
+    }
+    .main-mnu {
+        margin-right: -9px;
+    }
 }
